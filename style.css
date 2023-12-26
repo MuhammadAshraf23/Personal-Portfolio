@@ -1,0 +1,224 @@
+@keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+  
+  @keyframes bg-scrolling {
+    0% {
+      background-position: 50px 50px;
+    }
+  }
+  
+  /* Main styles */
+  #home {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+    animation-name: bg-scrolling-reverse;
+    animation-duration: 0.92s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  #home::before {
+    height: 100vh;
+    /* background-color: rgba(237, 0, 0, 0.91); */
+  }
+  
+
+section h1{
+    font-weight: bold;
+    transition: 1s;
+
+}
+section h1:hover{
+    font-size: 3rem;
+}
+#home {
+    height: 100vh;
+    background-color: rgb(253 253 253 / 91%);
+}
+#home .social-icons .github{
+    width: 6%;
+}
+#home .social-icons .linkedin{
+    width: 8%;
+}
+.bgimage{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+   margin-top: 69px;
+
+}
+.bgimage img{
+    border-radius: 50%;
+    width: 40%;
+}
+.nav-link {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-collapse ul li a.active, ul li a:hover{
+    border-bottom: 0.2rem solid #011aff;
+}
+.navbar-brand {
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+/* text css above hero image*/
+.hero-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-left: 40px;
+}
+
+.hero_title {
+    font-size: 4.5rem;
+    color: rgb(19 0 53);
+    font-weight: bold;
+    letter-spacing: -3px;
+}
+
+.hero_desc {
+    font-size: 2rem;
+    color: rgb(41 0 255);
+    font-weight: bold;
+}
+
+.hero_desc span {
+    color: red;
+}
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+    height: 100%;
+    border-radius: 4%;
+}
+
+/* services section css */
+#services .servicesText.card {
+    height: 100%;
+    cursor: pointer;
+}
+
+#services i {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+.card-title {
+    text-align: center;
+}
+
+#services .card:hover {
+    background-color: #131313;
+}
+#services .card:hover{
+    color: white;
+}
+
+/* Skills */
+#Skills {
+    background-image: linear-gradient(rgba(16, 255, 0, 0.6), rgb(34, 91, 133), rgba(4, 255, 0, 0.72));
+   padding-bottom: 20px;
+}
+#Skills .servicesText.card {
+    height: 100px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+#Skills img{
+    width: 15%;
+}
+#Skills .git{
+    padding:5px 0 !important
+}
+
+#footer {
+    background-color: #66b846;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* spacing on all sections */
+#services,
+#Skills,
+#portfolio,
+#contact {
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+#portfolio{
+    background-image: linear-gradient(rgba(148, 87, 57, 0.6), rgb(139, 65, 170), rgba(187, 185, 39, 0.72));
+}
+
+#contact {
+    background-image: linear-gradient(rgba(0, 187, 255, 0.6), rgb(249, 0, 108), rgba(25, 0, 255, 0.72));
+    padding-bottom: 4rem;
+}
+
+.viewAll {
+    margin: 10px 0px;
+    font-size: 26px;
+    color: white;
+    width: 40%;
+    border-radius: 4%;
+
+}
+
+/* MEDIA QUERY */
+@media (max-width:800px) {
+    .hero_title {
+        font-size: 3rem;
+        color: rgb(19 0 53);
+    }
+
+    .hero_desc {
+        font-size: 1.87rem;
+        color: rgb(41 0 255);
+        font-weight: bold;
+    }
+}
+
+@media (max-width:450px) {
+    .bgimage img{
+      width: 60.99%;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-20%, -20%);
+        padding-left: 3px;
+    }
+   
+    .hero_title {
+        font-size: 2.6rem;
+        color: rgb(19 0 53);
+        padding-left: 8px;
+    }
+    .btn-success{
+       margin-left: 6px;
+    }
+    .hero_desc {
+        font-size: 0.87rem;
+        color: rgb(41 0 255);
+        padding-left: 8px;
+        }
+
+}
