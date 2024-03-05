@@ -197,14 +197,17 @@ section h1:hover{
 @media (max-width:450px) {
     .bgimage img{
       width: 60.99%;
+      
     }
-
+     .bgimage{
+        justify-content:center !important;
+     }
     .hero-text {
         position: absolute;
-        top: 50%;
-        left: 20%;
-        transform: translate(-20%, -20%);
+        top: 86%;
+        left: 50%;
         padding-left: 3px;
+        text-align: center;
     }
    
     .hero_title {
