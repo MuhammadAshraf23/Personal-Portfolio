@@ -46,9 +46,29 @@ section h1:hover{
     font-family: 'Lobster', cursive;
     font-family: 'Sedgwick Ave Display', cursive;
 }
-.card-img-top{
-    width:100% !important;
+.card {
+    height: 300px; /* Set a fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.card-img-top {
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Make sure images cover the area without distorting */
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-center {
+    margin-top: auto;
+}
+
 /* text css above hero image*/
 .hero-text {
     position: absolute;
